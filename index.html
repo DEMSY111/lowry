@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Dancing+Script&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'advent pro', sans-serif;
+    padding:0;
+    margin:0;
+}
+ul {
+    margin:0;
+    padding:0;
+
+}
+li{
+    list-style-type:none;
+}
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size:2em;
+
+
+ }
+
+ a {
+     text-decoration: none;
+     color:black;
+
+ }
+  /*********************NAVBAR*********************/
+
+  nav {
+      overflow: hidden;
+      background-color: #FFFAE1;
+      position: fixed;
+      width: 100%;
+      opacity: 0.9;
+
+  }
+  header li {
+      float: right;
+      font-size: 1.2em;
+
+  }
+
+  header li a {
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      padding: 18px 16px;
+  }
+  #logo {
+      font-family: 'dancing script', cursive;
+      font-weight: bold;
+      float: left;
+
+  }
+   /* **************** IMAGE PRINCIPALE **************** */
+
+   #imagePrincipale {
+       padding-top: 60%;
+       background: url(media/image-principale.jpg) no-repeat fixed 50% 50%;
+       background-size: cover;
+       height: 799px;
+   }h1{
+       font-family: 'dancing script', cursive;
+       text-align: center;
+       color:antiquewhite;
+       font-size: 6em;
+       margin-top: 110px;
+   }
+    h3 {
+        text-align: center;
+        color:antiquewhite;
+        font-size: 3em;
+        text-shadow: 1px 3px 2px black
+
+    }
+    /* ****************PRESENTATON**************** */
+    #presentation {
+        background-color: #FFFAE1;
+        padding: 10px 0px 100px 0;
+    }
+    #texteintro {
+        padding: 0px 20%;
+    }
+    #prestation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 30px 20%;
+    }
+    footer {
+        background-color: #524A1E;
+        color: #FFFAE1;
+        padding: 20px 0 10px 0;
+        text-align: center;
+    }
+    form {
+        margin: 0 auto;
+        max-width: 900px;
+
+    }
+    input,textarea,button {
+        border: none;
+        width: 55%;
+        padding: 15px 10px;
+        margin: 1px 0;
+        font-size: 1.2em;
+        font-family: Verdana, sans-serif ;
+        border-radius: 8px;
+
+    }
+    textarea {
+        height:120px;
+    }
+    button{
+        font-size: 1.5em;
+        background-color: #FFFAE1;
+
+    }
+    button:hover {
+        background-color: #e55039;
+        color: #FFFAE1;
+        cursor:pointer;
+        transition: 0.3s ease-in-out
+
+
+    }
+    #premiertrait {
+        height: 1px;
+        width: 75%;
+        background-color: #FFFAE1;
+        margin: 60px auto;
+    }
+    #copyrighteticons {
+        display: flex;
+        margin-bottom: 20px;
+        padding: 0 10%;
+    }
+    #copyright {
+
+        width: 50%;
+        text-align: left;
+        color: #FFFAE1;
+
+    }
+    #icons {
+        width: 60%;
+        text-align: right;
+    }
+    #icons a {
+        display: inline-block;
+        padding: 0 15px;
+        font-size: 1.5em;
+        color: #FFFAE1;
+    }
+    #icons a:hover {
+        transform: scale(1.5);
+        transition: 0.1s;
+    }
+
+
+
+ <!DOCTYPE html>
+
+ <html lang="fr">
+     <head>
+         <meta charset="UTF-8">
+
+         <title>
+             DEMSY
+         </title>
+         <link rel="stylesheet" href="style.css">
+
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+     </head>
+     <body>
+
+        <header>
+            <nav>
+                <ul>
+                    <li id="logo"><a href="#">DEMSY</a></li>
+                <li><a href="#langue">Langue</a></li>
+                <li><a href="#reserver">Réserver</a></li>
+                <li><a href="#contact">Nous contacter</a></li>
+
+                </ul>
+            </nav>
+            <div id="imagePrincipale">
+                <h1>DEMSY</h1>
+                <div id="premierTrait"></div>
+                <h3>Chambre de luxe</h3>
+
+            </div>
+        </header>
+        <section id="presentation">
+            <div id="textIntro">
+                <h2>un lieu unique pour un séjour unique</h2>
+                <p>voulez-vous louer ou acheter une maison ?
+                    ne vous inquietez DEMSYBAT est la pour
+                    vous aider avec des maison de luxe pas 
+                    chères. CHEZ NOUS C'est le luxe pas cher!
+                </p>
+            </div>
+            <div id="prestation">
+                <div class="imagePrestations">
+                    <h4>coté cuisine</h4>
+                    <a href="#"><img src="media/dem.jpg" alt="dem"></a>
+                </div>
+            </div>
+            <div class="imagePrestations">
+                <h4>coté fénètre</h4>
+                <a href="#"><img src="media/fen.JPG" alt="fen"></a>
+            </div>
+            <div class="imagePrestations">
+                <h4>coté placard</h4>
+                <a href="#"><img src="media/plac.JPG" alt="plac"></a>
+            </div>
+            
+        </section>
+
+            <footer>
+                <h2 id="contact">contactez-nous</h2>
+                <form>
+                    <input placeholder="nom">
+                    <input placeholder="E-mail">
+                    <textarea placeholder="votre message ici..."></textarea>
+                    <button>Envoyer</button>
+                </form>
+                <div id="deuxiemeTrait"></div>
+                <div id="copyrightEtIcons"></div>
+                <div id="copyright">
+                    <span>2021</span>
+                </div>
+                <div id="icons">
+                    <a href="http://www.twitter.fr">
+                    <i class="fa fa-twitter"></i></a>
+                    <a href="http://www.facebook.fr">
+                        <i class="fa fa-facebook"></i></a>
+                        <a href="http://www.instagram.com">
+                            <i class="fa fa-instagram"></i></a>
+                </div>
+                
+                
+
+            </footer>
+        </header>
+     </body>
+
+ </html>
